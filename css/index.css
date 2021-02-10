@@ -11,7 +11,7 @@
     --primary-white-text:#ffffff;
     --primary-cta-background:#D5672A;
     --secondary-cta-background:#2A3141;
-
+    --secondary-white-text:#cacaca;
 }
 
 a
@@ -302,6 +302,7 @@ li
     .aboutus .description>p
     {
         text-align: center;
+        
     }
 }
 
@@ -370,6 +371,11 @@ li
 
 
 
+
+
+
+
+
 .slider
 {
     width: 100%;
@@ -409,9 +415,8 @@ li
 .slidewrapper
 {
     width: fill;
-    height: fit-content;
     margin-left: 223px;
-
+    height: 76.5vh;
     overflow: hidden;
     display: flex;
     gap: 100px;
@@ -420,6 +425,7 @@ li
 {
     display: flex;
     width: fit-content;
+    height: fit-content;
     flex-direction: column;
     gap: 0.91em;
     color: var(--primary-white-text);
@@ -442,6 +448,65 @@ li
     position: relative;
     top: -22.5px;
 }
+
+
+@media only screen and (max-width:1000px)
+{
+ 
+    .slidertitleandnav .title
+    {
+        margin-left: 10%;
+    }
+    .slidertitleandnav .title>h1
+    {
+        font-size: 1.5em;
+        white-space: nowrap;
+    }
+    .slidertitleandnav
+    {
+        height: 15%;
+    }
+    .slidertitleandnav .nav img
+    {
+        width: 10px;
+    }
+    .slidewrapper
+    {
+        padding-left: 6%;
+        margin-left: 0;
+    }
+    .slider_thumbnail
+    {
+        width: 85vw;
+        height: 45vh;
+        object-fit: cover;
+    }
+    .slides .description
+    {
+        align-items: center;
+    }
+    .slides .description>p
+    {
+        text-align: center;
+        line-height: 1.5em;
+        color: var(--secondary-white-text);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer
 {
