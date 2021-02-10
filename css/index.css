@@ -12,6 +12,7 @@
     --primary-cta-background:#D5672A;
     --secondary-cta-background:#2A3141;
     --secondary-white-text:#cacaca;
+    --secondary-black-text:#3f3f3f;
 }
 
 a
@@ -270,6 +271,7 @@ li
     width: 80%;
     line-height: 2em;
     font-size: 16px;
+    color: var(--secondary-black-text);
 }
 .information_wrapper .cta
 {
@@ -391,6 +393,7 @@ li
     height: fit-content;
     flex-direction: column;
     gap: 0.91em;
+    position: relative;
     color: var(--primary-white-text);
 }
 .slides .description
@@ -398,6 +401,10 @@ li
     display: flex;
     flex-direction: column;
     gap: 2em;
+}
+.slides .description p
+{
+    color: var(--secondary-white-text);
 }
 .slides .imageandcta
 {
