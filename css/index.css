@@ -301,6 +301,14 @@ li
         text-align: center;
         
     }
+    .information_wrapper.reverse_wrapper
+    {
+        grid-template-columns: 1fr;
+    }
+    .information_wrapper.reverse_wrapper .description
+    {
+        margin-left: 0;
+    }
 }
 
 .featured_image::after
