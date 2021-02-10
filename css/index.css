@@ -123,7 +123,7 @@ li
     }
     .links 
     {
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 0;
         width: 65vw;
@@ -287,7 +287,23 @@ li
     font-size: 14px;
 }
 
-
+@media only screen and (max-width:1200px)
+{
+    .featured_image
+    {
+        display: none;
+    }
+    .aboutus .description
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutus .description>p
+    {
+        text-align: center;
+    }
+}
 
 
 
