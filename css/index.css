@@ -532,7 +532,7 @@ footer
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 5.4%;
+    padding: 150px 5.4%;
     gap: 2em;
 }
 .page_title
@@ -561,6 +561,7 @@ footer
     height: fit-content;
     background: var(--secondary-cta-background);
     padding-left: 5.4%;
+    padding-right: 5.4%;
     padding-top: 5%;
     padding-bottom: 5%;
     display: flex;
@@ -582,10 +583,12 @@ footer
     display: flex;
     align-items: center;
     gap: 1.5em;
+    white-space: normal;
 }
 .listline
 {
     width: 40px;
+    max-width: 40px;
     height: 3px;
     background: var(--primary-cta-background);
 }
@@ -594,4 +597,25 @@ footer
 
     color: var(--primary-white-text);
     font-size: 0.9em;
+}
+@media only screen and (max-width:1000px)
+{
+    .listline
+    {
+        display: none;
+    }
+    .page_info_list ul li
+    {
+        line-height: 35px;
+        
+    }
+    .page_info_list ul 
+    {
+        gap: 2em;
+    }
+    .page_info_list
+    {
+        padding-top: 11%;
+        padding-bottom: 20%;
+    }
 }
