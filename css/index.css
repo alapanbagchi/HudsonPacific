@@ -13,6 +13,7 @@
     --secondary-cta-background:#2A3141;
     --secondary-white-text:#cacaca;
     --secondary-black-text:#3f3f3f;
+    --primary-blue-bg:#232936;
 }
 
 a
@@ -528,7 +529,7 @@ footer
 {
     width: 100%;
     min-height: 75vh;
-    background: var(--secondary-cta-background);
+    background: var(--primary-blue-bg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -743,4 +744,75 @@ footer
 {
     width: 54vw;
     height: 58vh;
+}
+
+.form_wrapper
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-blue-bg);
+}
+.form_wrapper form
+{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+.form_block
+{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formcolumn
+{
+    width: 100%;
+    display: flex;
+    gap: 4em;
+}
+label
+{
+    color: var(--primary-white-text);
+    padding-bottom: 1em;
+}
+input
+{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 1.2em;
+    color: white;
+}
+::placeholder
+{
+    color: var(--secondary-white-text);
+   
+}
+@media only screen and (max-width:1000px)
+{
+    .formcolumn
+    {
+        flex-direction: column;
+        gap: 2em;
+    }
+    .form_wrapper form
+    {
+        gap: 2em;
+        width: 80%;
+    }
+    .form_block
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
 }
