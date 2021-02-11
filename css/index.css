@@ -197,8 +197,7 @@ li
 .cta
 {
     background: var(--primary-cta-background);
-    /* width: 175px;
-    height: 45px; */
+    z-index: 2;
     display: grid;
     grid-template-columns: 1fr 0.1fr;
     justify-content: center;
@@ -322,7 +321,6 @@ li
     display: flex;
     position: relative;
     background: rgba(213, 103, 42, 0.74);
-
     left: 0px;
 }
 .reverse_wrapper
@@ -411,6 +409,7 @@ li
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    height: 100%;
 }
 .slides .imageandcta .cta
 {
@@ -618,4 +617,107 @@ footer
         padding-top: 11%;
         padding-bottom: 20%;
     }
+}
+.gallerywrapper
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery
+{
+    width: 1310px;
+    min-height: 80vh;
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    gap: 4em;
+}
+.projecttitle
+{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    font-size: .8em;
+    left: 1em;
+    bottom: 7em;
+}
+
+.gallery .slides .imageandcta::after
+{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 332px;
+    background: linear-gradient(180deg, rgba(42, 49, 65, 0) 0%, #2A3141 100%);
+}
+.gallery .slides
+{
+    height: 41.5vh;
+}
+@media only screen and (max-width:1360px)
+{
+    .gallery
+    {
+        gap: 4em;
+    }
+}
+@media only screen and (max-width:1100px)
+{
+    .gallery
+    {
+        gap: 0;
+        row-gap: 4em;
+    }
+    
+}
+@media only screen and (max-width:1000px)
+{
+    .gallery
+    {
+        gap: 4em;
+    }
+    .gallery .slides .imageandcta::after
+    {
+        width: 85vw;
+        height: 45vh;
+    }
+    .projecttitle
+    {
+        bottom: 0;
+    }
+    .gallery .slides
+    {
+        height: 48vh;
+    }
+    .gallery .slides .imageandcta
+    {
+        height:425.59px;
+    }
+    .projecttitle
+    {
+        bottom: 8vh;
+    }
+}
+.pagination_button .cta
+{
+    background:var(--secondary-cta-background)
+}
+
+.featured_slide_wrapper
+{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.featured_slide_wrapper .slides .imageandcta .slider_thumbnail
+{
+    width: 54vw;
 }
