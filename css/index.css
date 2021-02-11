@@ -312,7 +312,11 @@ li
         margin-left: 0;
     }
 }
-
+.glider-track
+{
+    display: flex;
+    gap: 100px;
+}
 .featured_image::after
 {
     z-index: 2;
@@ -388,8 +392,8 @@ li
 .slides
 {
     display: flex;
-    width: fit-content;
-    height: fit-content;
+    width: fit-content !important;
+    height: fit-content !important;
     flex-direction: column;
     gap: 0.91em;
     z-index: 2;
