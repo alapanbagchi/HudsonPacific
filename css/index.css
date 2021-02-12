@@ -820,3 +820,60 @@ input
         flex-direction: column;
     }
 }
+
+.contactcontainer
+{
+    width: 60%;
+    height: 32vh;
+    padding: 2em;
+    background: white;
+    position: absolute;
+    top: 85vh;
+    z-index: 10;
+    display: flex;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+}
+
+.address
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 27px;
+}
+.contact
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.block
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media only screen and (max-width:800px)
+{
+    .contactcontainer
+    {
+        gap: 20px;
+        width: 100%;
+        height: 28vh;
+    }
+    .contact
+    {
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    .form_wrapper
+    {
+        padding-top: 17vh;
+    }
+}
