@@ -200,6 +200,11 @@ li
     text-align: center;
     line-height: 1.5em;
 }
+
+.slide-scroller
+{
+    display: flex;
+}
 .cta
 {
     background: var(--primary-cta-background);
@@ -392,10 +397,9 @@ li
     position: relative;
     height: fit-content;
     height: -moz-fit-content;
-    overflow: hidden;
     display: flex;
     gap: 100px;
-    padding-left: 230px;
+    margin-left: 234px;
 }
 .slides
 {
@@ -457,7 +461,8 @@ li
     }
     .slidewrapper
     {
-        padding-left: 0;
+        padding-left: 5%;
+        margin-left: 0;
     }
     .slider_thumbnail
     {
