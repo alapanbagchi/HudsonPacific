@@ -923,6 +923,11 @@ input
 
 @media only screen and (max-width:1000px)
 {
+    .servicescontainer
+    {
+        padding-top: 10em;
+        gap: 100px;
+    }
     .servicewrapper
     {
         grid-template-columns: repeat(auto-fill, minmax(min(22rem, 100%), 1fr));
