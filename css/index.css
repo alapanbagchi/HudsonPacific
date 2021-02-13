@@ -538,6 +538,10 @@ footer {
   padding-bottom: 10em;
   gap: 4em;
 }
+.gallerywrapper .gallery .slides
+{
+  padding:0;
+}
 .projecttitle {
   width: 100%;
   position: absolute;
