@@ -334,6 +334,7 @@ li {
   flex-direction: column;
   padding-right: 100px;
   gap: 0.91em;
+  cursor: pointer;
   z-index: 2;
   position: relative;
   color: var(--primary-white-text);
