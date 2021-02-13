@@ -49,6 +49,7 @@ ul {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 0.0001fr;
+
 }
 .logo {
   width: 100%;
@@ -366,7 +367,7 @@ li {
 
 @media only screen and (max-width: 1000px) {
   .slidertitleandnav .title {
-    margin-left: 10%;
+    margin-left: 11%;
   }
   .slidertitleandnav .title > h1 {
     font-size: 1.5em;
