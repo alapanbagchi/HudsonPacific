@@ -337,6 +337,7 @@ li {
   z-index: 2;
   position: relative;
   color: var(--primary-white-text);
+  outline: none;
 }
 .slides .description {
   display: flex;
