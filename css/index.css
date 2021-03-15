@@ -796,6 +796,7 @@ input {
   background-color: #000000;
   display: flex;
   object-fit: cover;
+  overflow: hidden;
 }
 .productslide
 {
@@ -878,6 +879,7 @@ input {
   height: 40vh;
   object-fit: cover;
   padding-left: 5em;
+  overflow: hidden;
 }
 @media only screen and (max-width: 1100px) {
 
@@ -893,7 +895,7 @@ input {
   }
   .product_description
   {
-    padding: 1em 1em 3em 1em;
+    padding: 3em 1em 3em 1em;
   }
   .articledescriptionwrapper
   {
