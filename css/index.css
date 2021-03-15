@@ -863,7 +863,7 @@ input {
   color: var(--primary-black-text);
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 3em;
 }
 
 
@@ -893,9 +893,10 @@ input {
 .halfvertical
 {
   display: flex;
-  flex-direction: column;
-  gap: 5em;
-  justify-content: center;
+    flex-direction: column;
+    gap: 5em;
+    justify-content: center;
+    width: 100%;
 }
 
 .product_desc_block1_textandimage
@@ -907,6 +908,12 @@ input {
 .threeandone .spread
 {
   justify-content: unset;
+}
+.full
+{
+  width: 100%;
+  display: flex;
+  line-height: 30px;
 }
 .spread
 {
@@ -952,12 +959,11 @@ input {
 }
 @media only screen and (max-width: 1100px) {
 
-  .halfvertical 
+  .product_title
   {
-    display: grid;
-     grid-template-rows: none; 
-     gap: 5em;
+    font-size:1.45em ;
   }
+
   .product_image
   {
     justify-content: center;
